@@ -1,0 +1,12 @@
+output:
+1
+4
+2
+3
+Explanation:
+->console.log(1); logs 1 to the console immediately.
+->console.log(1); logs 1 to the console immediately.
+->The first setTimeout(printNumber, 0, 2); callback with 2 as an argument is picked up from the event queue. Even though it was scheduled to execute with a delay of 0 
+ milliseconds, it will be executed after the synchronous code has finished executing. So, it will log 2 to the console.
+->The second setTimeout(printNumber, 100, 3); callback with 3 as an argument is picked up from the event queue after a delay of 100 milliseconds. So, it will log 3 to the 
+ console.
