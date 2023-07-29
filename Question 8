@@ -1,0 +1,7 @@
+The numbers 1, 4, 3, and 2 will be logged to the console when the code is executed.
+->"1" is logged to the console.
+->setTimeout with a delay of 0 for logging 3 is added to the event queue.
+->"4" is logged to the console.
+->The synchronous code execution is complete.
+->The event loop picks up the function from the event queue (the one that logs 3), and "3" is logged to the console.
+->After 1000 milliseconds (1 second), the function that logs 2 is picked up from the event queue, and 2 is logged to the console.
