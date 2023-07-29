@@ -1,0 +1,11 @@
+output:
+array 1: length=5 last=j,o,n,e,s
+array 2: length=5 last=j,o,n,e,s
+
+Explanation:
+->arr1 will be [['j', 'o', 'h', 'n']].
+->arr2 will be a reference to arr1 (since reverse() modifies the original array in place and returns a reference to the same array). So, arr2 will also be ['j', 'o', 'h', 'n'].
+->arr3 will be ['j', 'o', 'n', 'e', 's'].
+->arr2 is modified using push, so it becomes [['j', 'o', 'h', 'n'], ['j', 'o', 'n', 'e', 's']]. Here, the entire arr3 array is added as an element at the end of arr2. 
+->The first console.log will output "array 1: length=5 last=j,o,n,e,s".
+->The second console.log will output "array 2: length=5 last=j,o,n,e,s". The slice(-1) method returns the last element of arr2, which is the arr3 array ['j', 'o', 'n', 'e', 's'].
